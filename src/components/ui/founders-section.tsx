@@ -1,4 +1,9 @@
 import { Button } from "@/components/ui/button";
+import sandraImage from "@/assets/Sandra.webp";
+import rafaelImage from "@/assets/Rafael.webp";
+import rodrigoImage from "@/assets/Rodrigo.webp";
+import wesleyImage from "@/assets/Wesley.webp";
+import isabelaImage from "@/assets/Isabela.webp";
 
 interface FoundersSectionProps {
   onCTAClick: () => void;
@@ -27,7 +32,7 @@ export const FoundersSection = ({ onCTAClick }: FoundersSectionProps) => {
           <div className="text-center">
             <div className="relative mb-4">
               <img 
-                src="/src/assets/Sandra.webp" 
+                src={sandraImage} 
                 alt="Sandra Arcanjo"
                 className="w-48 h-48 mx-auto rounded-lg object-cover"
               />
@@ -40,7 +45,7 @@ export const FoundersSection = ({ onCTAClick }: FoundersSectionProps) => {
           <div className="text-center">
             <div className="relative mb-4">
               <img 
-                src="/src/assets/Rafael.webp" 
+                src={rafaelImage} 
                 alt="Rafael Rezende"
                 className="w-48 h-48 mx-auto rounded-lg object-cover"
               />
@@ -53,7 +58,7 @@ export const FoundersSection = ({ onCTAClick }: FoundersSectionProps) => {
           <div className="text-center">
             <div className="relative mb-4">
               <img 
-                src="/src/assets/Rodrigo.webp" 
+                src={rodrigoImage} 
                 alt="Dr. Rodrigo Andrade"
                 className="w-48 h-48 mx-auto rounded-lg object-cover"
               />
@@ -66,7 +71,7 @@ export const FoundersSection = ({ onCTAClick }: FoundersSectionProps) => {
           <div className="text-center">
             <div className="relative mb-4">
               <img 
-                src="/src/assets/Wesley.webp" 
+                src={wesleyImage} 
                 alt="Wesley Costa"
                 className="w-48 h-48 mx-auto rounded-lg object-cover"
               />
@@ -79,7 +84,7 @@ export const FoundersSection = ({ onCTAClick }: FoundersSectionProps) => {
           <div className="text-center">
             <div className="relative mb-4">
               <img 
-                src="/src/assets/Isabela.webp" 
+                src={isabelaImage} 
                 alt="Dra. Isabela Freitas"
                 className="w-48 h-48 mx-auto rounded-lg object-cover"
               />
