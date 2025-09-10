@@ -95,7 +95,7 @@ export const PricingSection = ({ onCTAClick }: PricingSectionProps) => {
             {/* CTA Button */}
             <div className="space-y-4">
               <Button 
-                onClick={onCTAClick}
+                onClick={() => window.open('https://assinatura.vivaacademy.app/subscribe/viva-academy-full-50-off', '_blank')}
                 className="w-full bg-primary hover:bg-primary/90 text-white font-semibold text-lg py-4 rounded-xl shadow-lg transition-all max-w-md mx-auto"
               >
                 GARANTIR MINHA VAGA AGORA
