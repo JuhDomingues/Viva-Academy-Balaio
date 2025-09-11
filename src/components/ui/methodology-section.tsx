@@ -80,7 +80,12 @@ export const MethodologySection = ({ onCTAClick }: MethodologySectionProps) => {
             
             <div className="mt-12">
               <Button 
-                onClick={onCTAClick}
+                onClick={() => {
+                  const ofertaSection = document.getElementById('oferta');
+                  if (ofertaSection) {
+                    ofertaSection.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
                 className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold text-lg px-8 py-4"
               >
                 Quero começar meu plano de vida nos EUA

@@ -91,10 +91,15 @@ export const FAQSection = ({ onCTAClick }: FAQSectionProps) => {
               Entre em contato conosco e tire todas as suas dúvidas sobre como planejar sua vida nos EUA com segurança.
             </p>
             <Button 
-              onClick={onCTAClick}
+              onClick={() => {
+                const phoneNumber = "5511913321718";
+                const message = "Olá! Tenho interesse em saber mais sobre a Viva Academy e como começar meu plano de vida nos EUA.";
+                const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+                window.open(whatsappUrl, '_blank');
+              }}
               className="bg-black hover:bg-gray-900 text-white font-bold text-lg px-8 py-4"
             >
-Quero começar meu plano de vida nos EUA
+              Falar no WhatsApp
             </Button>
           </div>
         </div>

@@ -7,7 +7,7 @@ interface PricingSectionProps {
 
 export const PricingSection = ({ onCTAClick }: PricingSectionProps) => {
   return (
-    <section className="py-24 bg-black">
+    <section id="oferta" className="py-24 bg-black">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
           {/* Professional Title */}

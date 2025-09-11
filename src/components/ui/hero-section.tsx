@@ -46,7 +46,12 @@ export const HeroSection = ({ onCTAClick }: HeroSectionProps) => {
           </p>
           
           <Button 
-            onClick={onCTAClick}
+            onClick={() => {
+              const ofertaSection = document.getElementById('oferta');
+              if (ofertaSection) {
+                ofertaSection.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
             className="bg-primary hover:bg-primary/90 text-white font-semibold text-lg px-10 py-4 rounded-lg shadow-lg transition-all"
           >
             Começar meu plano de vida nos EUA
