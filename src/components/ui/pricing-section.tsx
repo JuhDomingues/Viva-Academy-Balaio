@@ -47,7 +47,7 @@ export const PricingSection = ({ onCTAClick }: PricingSectionProps) => {
                   50% OFF
                 </div>
               </div>
-              <p className="text-lg text-gray-300 mt-2">ou em até 12x de R$ 99,70</p>
+              <p className="text-lg text-gray-300 mt-2">ou em até 10x de R$ 99,70</p>
             </div>
             
             {/* Urgency */}
