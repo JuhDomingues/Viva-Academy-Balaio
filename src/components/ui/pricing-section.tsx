@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Clock } from "lucide-react";
+import { trackPixelEvent, FacebookPixelEvents } from "@/lib/facebook-pixel";
 
 interface PricingSectionProps {
   onCTAClick: () => void;
@@ -95,7 +96,17 @@ export const PricingSection = ({ onCTAClick }: PricingSectionProps) => {
             {/* CTA Button */}
             <div className="space-y-4">
               <Button 
-                onClick={() => window.open('https://assinatura.vivaacademy.app/subscribe/9fd960f8-4d3b-4cf4-b1ea-6e2cf5b4c88c', '_blank')}
+                onClick={() => {
+                  // Track Facebook Pixel conversion event
+                  trackPixelEvent(FacebookPixelEvents.INITIATE_CHECKOUT, {
+                    content_name: 'Viva Academy Subscription',
+                    value: 997,
+                    currency: 'BRL',
+                    source: 'pricing_section'
+                  });
+                  
+                  window.open('https://assinatura.vivaacademy.app/subscribe/9fd960f8-4d3b-4cf4-b1ea-6e2cf5b4c88c', '_blank');
+                }}
                 className="w-full bg-primary hover:bg-primary/90 text-white font-semibold text-lg py-4 rounded-xl shadow-lg transition-all max-w-md mx-auto"
               >
                 GARANTIR MINHA VAGA AGORA

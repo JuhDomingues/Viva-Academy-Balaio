@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { VolumeX, Volume2 } from "lucide-react";
 import { useState, useRef } from "react";
+import { trackPixelEvent, FacebookPixelEvents } from "@/lib/facebook-pixel";
 
 interface HeroSectionProps {
   onCTAClick: () => void;
@@ -47,6 +48,12 @@ export const HeroSection = ({ onCTAClick }: HeroSectionProps) => {
           
           <Button 
             onClick={() => {
+              // Track Facebook Pixel event
+              trackPixelEvent(FacebookPixelEvents.LEAD, {
+                content_name: 'Hero CTA Click',
+                source: 'hero_section'
+              });
+              
               const ofertaSection = document.getElementById('oferta');
               if (ofertaSection) {
                 ofertaSection.scrollIntoView({ behavior: 'smooth' });
