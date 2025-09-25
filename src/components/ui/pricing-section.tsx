@@ -42,13 +42,10 @@ export const PricingSection = ({ onCTAClick }: PricingSectionProps) => {
               </div>
               <div className="relative inline-block">
                 <div className="text-6xl lg:text-7xl font-bold text-white mb-2">
-                  R$ 997
-                </div>
-                <div className="absolute -top-2 -right-6 bg-red-500 text-white px-2 py-1 rounded text-xs font-bold rotate-12">
-                  50% OFF
+                  12x R$ 66,42
                 </div>
               </div>
-              <p className="text-lg text-gray-300 mt-2">ou em até 10x de R$ 99,70</p>
+              <p className="text-lg text-gray-300 mt-2">ou à vista por R$ 797</p>
             </div>
             
             {/* Urgency */}
@@ -100,12 +97,12 @@ export const PricingSection = ({ onCTAClick }: PricingSectionProps) => {
                   // Track Facebook Pixel conversion event
                   trackPixelEvent(FacebookPixelEvents.INITIATE_CHECKOUT, {
                     content_name: 'Viva Academy Subscription',
-                    value: 997,
+                    value: 797,
                     currency: 'BRL',
                     source: 'pricing_section'
                   });
                   
-                  window.open('https://assinatura.vivaacademy.app/subscribe/9fd960f8-4d3b-4cf4-b1ea-6e2cf5b4c88c', '_blank');
+                  window.open('https://assinatura.vivaacademy.app/subscribe/oferta-especial-balaio', '_blank');
                 }}
                 className="w-full bg-primary hover:bg-primary/90 text-white font-semibold text-lg py-4 rounded-xl shadow-lg transition-all max-w-md mx-auto"
               >
