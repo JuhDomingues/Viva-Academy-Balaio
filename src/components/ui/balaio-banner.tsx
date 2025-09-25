@@ -4,7 +4,7 @@ export const BalaioOffer = () => {
       <div className="container mx-auto px-6 flex items-center justify-center gap-4">
         <div className="flex items-center gap-4">
           <img 
-            src="/src/assets/logo balaio.jpg" 
+            src="/logo balaio.jpg" 
             alt="Logo Podcast do Balaio" 
             className="w-12 h-12 rounded-full object-cover"
           />
