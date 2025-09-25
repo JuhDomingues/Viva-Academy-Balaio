@@ -103,7 +103,7 @@ export const FoundersSection = ({ onCTAClick }: FoundersSectionProps) => {
                 ofertaSection.scrollIntoView({ behavior: 'smooth' });
               }
             }}
-            className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold text-lg px-12 py-4 rounded-none"
+            className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold text-lg px-6 sm:px-12 py-4 rounded-none mx-4 sm:mx-0"
           >
 Quero começar meu plano de vida nos EUA
           </Button>
