@@ -9,6 +9,7 @@ import { FAQSection } from "@/components/ui/faq-section";
 import { MediaSection } from "@/components/ui/media-section";
 import { CarouselSection } from "@/components/ui/carousel-section";
 import { Footer } from "@/components/ui/footer";
+import { BalaioOffer } from "@/components/ui/balaio-banner";
 import { useToast } from "@/hooks/use-toast";
 
 const Index = () => {
@@ -23,6 +24,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
+      <BalaioOffer />
       <main>
         <HeroSection onCTAClick={handleCTAClick} />
         <EntrepreneursSection />

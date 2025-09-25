@@ -28,6 +28,13 @@ export const PricingSection = ({ onCTAClick }: PricingSectionProps) => {
           
           {/* Clean Pricing Card */}
           <div className="bg-gray-900 border-2 border-gray-700 rounded-2xl p-12 shadow-lg relative max-w-3xl mx-auto">
+            
+            {/* 60% OFF Tag */}
+            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+              <div className="bg-red-600 text-white px-6 py-2 rounded-full font-bold text-lg shadow-lg">
+                60% OFF
+              </div>
+            </div>
 
             {/* Price Section */}
             <div className="text-center mb-12">
@@ -42,6 +49,15 @@ export const PricingSection = ({ onCTAClick }: PricingSectionProps) => {
               <p className="text-lg text-gray-300 mt-2">ou à vista por R$ 797</p>
             </div>
             
+            {/* Cupom Warning */}
+            <div className="mb-8 p-4 bg-primary/10 border border-primary/20 rounded-xl">
+              <div className="flex items-center justify-center gap-2 mb-2">
+                <span className="text-primary font-semibold">⚠️ IMPORTANTE:</span>
+              </div>
+              <p className="text-center text-gray-300 text-sm">
+                Para garantir o desconto de 60%, você deve inserir o cupom <span className="font-bold text-primary">BALAIO60</span> no checkout
+              </p>
+            </div>
             
             {/* Benefits */}
             <div className="mb-12">
@@ -89,7 +105,7 @@ export const PricingSection = ({ onCTAClick }: PricingSectionProps) => {
                     source: 'pricing_section'
                   });
                   
-                  window.open('https://assinatura.vivaacademy.app/subscribe/oferta-especial-balaio', '_blank');
+                  window.open('https://assinatura.vivaacademy.app/pay/assinatura-viva-academy', '_blank');
                 }}
                 className="w-full bg-primary hover:bg-primary/90 text-white font-semibold text-lg py-4 rounded-xl shadow-lg transition-all max-w-md mx-auto"
               >
