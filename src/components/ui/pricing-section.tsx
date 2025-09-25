@@ -28,15 +28,9 @@ export const PricingSection = ({ onCTAClick }: PricingSectionProps) => {
           
           {/* Clean Pricing Card */}
           <div className="bg-gray-900 border-2 border-gray-700 rounded-2xl p-12 shadow-lg relative max-w-3xl mx-auto">
-            {/* Limited Badge */}
-            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-              <div className="bg-primary text-white px-6 py-2 rounded-full font-medium text-sm">
-                OFERTA LIMITADA
-              </div>
-            </div>
 
             {/* Price Section */}
-            <div className="text-center mb-12 mt-4">
+            <div className="text-center mb-12">
               <div className="mb-4">
                 <span className="text-lg text-gray-400 line-through">De R$ 1.997</span>
               </div>
@@ -48,13 +42,6 @@ export const PricingSection = ({ onCTAClick }: PricingSectionProps) => {
               <p className="text-lg text-gray-300 mt-2">ou à vista por R$ 797</p>
             </div>
             
-            {/* Urgency */}
-            <div className="bg-red-50 border border-red-200 rounded-xl p-6 mb-12">
-              <div className="flex items-center justify-center gap-3">
-                <Clock className="w-5 h-5 text-red-600" />
-                <p className="text-lg font-semibold text-red-700">Oferta válida por apenas 7 dias</p>
-              </div>
-            </div>
             
             {/* Benefits */}
             <div className="mb-12">
