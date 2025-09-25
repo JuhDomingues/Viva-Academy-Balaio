@@ -31,24 +31,24 @@ export const PositioningSection = () => {
           </div>
           
           {/* Right Side - Trophies */}
-          <div className="relative flex justify-center items-center">
+          <div className="relative flex justify-center items-center px-8 lg:px-0">
             {/* Main Trophy */}
             <div className="relative z-10">
-              <div className="w-40 h-40 bg-gradient-to-b from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center shadow-2xl">
-                <Trophy className="w-20 h-20 text-yellow-900" />
+              <div className="w-32 h-32 lg:w-40 lg:h-40 bg-gradient-to-b from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center shadow-2xl">
+                <Trophy className="w-16 h-16 lg:w-20 lg:h-20 text-yellow-900" />
               </div>
             </div>
             
             {/* Secondary Trophies */}
-            <div className="absolute -left-12 top-8">
-              <div className="w-24 h-24 bg-gradient-to-b from-yellow-300 to-yellow-500 rounded-full flex items-center justify-center shadow-xl opacity-80">
-                <Trophy className="w-12 h-12 text-yellow-900" />
+            <div className="absolute -left-4 lg:-left-12 top-4 lg:top-8">
+              <div className="w-20 h-20 lg:w-24 lg:h-24 bg-gradient-to-b from-yellow-300 to-yellow-500 rounded-full flex items-center justify-center shadow-xl opacity-80">
+                <Trophy className="w-10 h-10 lg:w-12 lg:h-12 text-yellow-900" />
               </div>
             </div>
             
-            <div className="absolute -right-8 bottom-4">
-              <div className="w-28 h-28 bg-gradient-to-b from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center shadow-xl opacity-90">
-                <Trophy className="w-14 h-14 text-yellow-900" />
+            <div className="absolute -right-2 lg:-right-8 bottom-2 lg:bottom-4">
+              <div className="w-24 h-24 lg:w-28 lg:h-28 bg-gradient-to-b from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center shadow-xl opacity-90">
+                <Trophy className="w-12 h-12 lg:w-14 lg:h-14 text-yellow-900" />
               </div>
             </div>
             
