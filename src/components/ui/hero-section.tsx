@@ -32,7 +32,7 @@ export const HeroSection = ({ onCTAClick }: HeroSectionProps) => {
       <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/70 to-black/50"></div>
       
       {/* Content Grid */}
-      <div className="relative z-10 container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+      <div className="relative z-10 container mx-auto px-6 pt-20 lg:pt-0 grid lg:grid-cols-2 gap-12 items-center">
         {/* Left Side - Text Content */}
         <div className="text-white">
           <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight text-white">

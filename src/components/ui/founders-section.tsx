@@ -95,7 +95,7 @@ export const FoundersSection = ({ onCTAClick }: FoundersSectionProps) => {
         </div>
         
         {/* CTA Button */}
-        <div className="text-center">
+        <div className="text-center mt-8">
           <Button 
             onClick={() => {
               const ofertaSection = document.getElementById('oferta');
