@@ -95,7 +95,7 @@ export const FoundersSection = ({ onCTAClick }: FoundersSectionProps) => {
         </div>
         
         {/* CTA Button */}
-        <div className="text-center mt-8">
+        <div className="text-center mt-8 px-4">
           <Button 
             onClick={() => {
               const ofertaSection = document.getElementById('oferta');
@@ -103,7 +103,7 @@ export const FoundersSection = ({ onCTAClick }: FoundersSectionProps) => {
                 ofertaSection.scrollIntoView({ behavior: 'smooth' });
               }
             }}
-            className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold text-lg px-6 sm:px-12 py-4 rounded-none mx-4 sm:mx-0"
+            className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold text-base sm:text-lg px-4 sm:px-12 py-4 rounded-none w-full sm:w-auto max-w-full"
           >
 Quero começar meu plano de vida nos EUA
           </Button>
