@@ -105,7 +105,7 @@ export const PricingSection = ({ onCTAClick }: PricingSectionProps) => {
                     source: 'pricing_section'
                   });
                   
-                  window.open('https://assinatura.vivaacademy.app/pay/assinatura-viva-academy', '_blank');
+                  window.open('https://assinatura.vivaacademy.app/pay/assinatura-viva-academy-1-ano', '_blank');
                 }}
                 className="w-full bg-primary hover:bg-primary/90 text-white font-semibold text-lg py-4 rounded-xl shadow-lg transition-all max-w-md mx-auto"
               >
